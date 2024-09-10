@@ -2,7 +2,9 @@
 
 ## 概要
 
-競技とゲームの内容の説明
+### 競技内容
+
+### ゲーム内容
 
 ---
 
@@ -50,20 +52,20 @@ AIは必ず4人選ぶ必要があります（重複可）。4人選ぶと「決�
 ### ゲーム画面（Assets/Scenes/Game.scene）
 
 冒頭では今回の試合に参加する4人のAIが表示されます。<br>
-参加者選択画面から遷移してきた場合は、選択した参加者が表示されます。
+参加者選択画面から遷移してきた場合は、選択した参加者が表示されます。<br>
 ゲーム画面から起動した場合は、参加者リスト（Assets/GameAssets/ParticipantList.asset）の上から4つ分の要素が選択されます。
 
-Spaceキーを押すと表示が消え、プレイ画面が見えるようになります。
-Spaceキーを押すと試合が開始します。
-試合が終了すると「GAME SET」と表示されます。
-Spaceキーを押すと、リザルトが表示されます。
+Spaceキーを押すと表示が消え、プレイ画面が見えるようになります。<br>
+Spaceキーを押すと試合が開始します。。<br>
+試合が終了すると「GAME SET」と表示されます。<br>
+Spaceキーを押すと、リザルトが表示されます。<br>
 Spaceキーを押すと、タイトル画面へ遷移します（リザルト演出中も押下可能）。
 
 [画像]
 
 ### AI作成時に継承するベースクラス（Assets/UdonChef/ComPlayerBase.cs）
 
-AIを作成時、ComPlayerBaseクラスを継承します。
+AIを作成時、ComPlayerBaseクラスを継承します。<br>
 AI作成時は、ベースクラスの関数を用いて機能実装します。
 
 ### 参加者のAIデータ（Assets/Participant/ 以下）
@@ -86,11 +88,11 @@ AIデータは、参加者ごとにフォルダ単位で分けます。各フォ
 
 ### AI登録方法
 
-1. Unity上部メニュー **SXG2024 > 参加者登録** を選択
+#### 1. Unity上部メニュー **SXG2024 > 参加者登録** を選択
 
 参加者登録ウィンドウが開きます。
 
-2. 各項目を入力
+#### 2. 各項目を入力
 
 必須項目として、「参加者番号」の欄に**connpass申し込み時に発行された参加者番号**を入力してください。<br>
 
@@ -101,7 +103,7 @@ AIデータは、参加者ごとにフォルダ単位で分けます。各フォ
 
 [画像]
 
-3. 「登録」ボタン押下
+#### 3. 「登録」ボタン押下
 
 各項目を入力し終えて「登録」ボタンを押すと、参加者のAIデータが作成されます。<br>
 フォルダ名、各ファイル名は「Player(3桁の参加者番号）」で命名されます。<br>
@@ -121,6 +123,34 @@ Assets/
 参加者登録ウィンドウでアイコン画像ファイルを設定しなかった場合、後から手動で追加してください。<br>
 Prefabで、組織名（Your Organization）、参加者名（Your Name）、アイコン画像ファイル（Face Image）を変更可能です。
 
+#### 4. AIを作成する
+
+作成されたC#スクリプトを使用して、AIを作成していきます。<br>
+初期状態では、オーバーライドされた`UDON_ShouldGetTheFoodOnStage`関数と`UDON_ReportOnShipping`関数のみが記入されています。<br>
+
+```C#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using SXG2024;
+
+namespace Player000
+{
+  public class Player000 : ComPlayerBase
+  {
+    public override bool UDON_ShouldGetTheFoodOnStage(FoodNowInfo foodInfo)
+    {
+      return true;
+    }
+
+    public override void UDON_ReportOnShipping(IList<FoodType> foodsList, int tableId, int price, string menuName)
+    {
+
+    }
+  }
+}
+```
+
 ### 注意事項
 
 - 参加者番号を間違えないよう注意してください
@@ -135,6 +165,9 @@ Prefabで、組織名（Your Organization）、参加者名（Your Name）、ア
 ---
 
 ## 使用できる関数
+
+- [SXG_GetFoodsInfoOnStage](#override01)
+- [SXG_GetFoodInfo](#override02)
 
 - [SXG_GetFoodsInfoOnStage](#func01)
 - [SXG_GetFoodInfo](#func02)
@@ -155,6 +188,25 @@ Prefabで、組織名（Your Organization）、参加者名（Your Name）、ア
 - [SXG_GetLeftTimeOfStiffness](#func17)
 - [SXG_GetPlayerGroundType](#func18)
 - [SXG_GetRemainingGameTime](#func19)
+
+---
+
+<h3 id="override01">UDON_ShouldGetTheFoodOnStage</h3>
+
+public virtual bool UDON_ShouldGetTheFoodOnStage(FoodNowInfo foodInfo);
+
+自身が食材に触れたときに呼び出されます。<br>
+自身に触れた食材（foodInfo）を拾うかどうかの処理を記述し、拾う場合はtrue、拾わない場合はfalseを返してください。
+
+---
+
+<h3 id="override02">UDON_ReportOnShipping</h3>
+
+public virtual void UDON_ReportOnShipping(IList<FoodType> foodsList, int tableId, int price, string menuName);
+
+自身の出荷テーブルに出荷されたときに呼び出されます。プレイヤーの自他を問わず呼び出されます。
+
+---
 
 <h3 id="func01">SXG_GetFoodsInfoOnStage</h3>
 

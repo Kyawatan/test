@@ -6,11 +6,19 @@
 
 ### ゲーム内容
 
+### 本番の進行方法
+
 ---
 
 ## 開発環境
 
 - Unity 2022.3.39f1
+
+---
+
+## AI作成前に必要な準備
+
+**connpassで参加を申し込み、「参加番号」を発行してください。**
 
 ---
 
@@ -21,11 +29,24 @@
 ```
 Assets/
 ├── GaneAssets/
-│   └── ParticipantList.asset
+│   ├── ParticipantList.asset
+│   └── Textures/
+│       ├── PlayerSampleImage_Lucca00.png
+│       ├── PlayerSampleImage_Lucca01.png
+│       ├── PlayerSampleImage_Lucca02.png
+│       └── PlayerSampleImage_Takoneko.png
 ├── Participant/
-│   └── Sample01/
-│       ├── ComPlayerSample01.cs
-│       └── ComPlayerSample01.prefab
+│   ├── Sample/
+│   │   ├── ComPlayerSample.cs
+│   │   └── ComPlayerSample.prefab
+│   ├── Sample01/
+│   │   ├── ComPlayerSample01.cs
+│   │   └── ComPlayerSample01.prefab
+│   ├── Sample02/
+│   │   ├── ComPlayerSample02.cs
+│   │   └── ComPlayerSample02.prefab
+│   └── Sample03/
+│       └── ComPlayerSample03.prefab
 ├── Scenes/
 │   ├── Game.scene
 │   ├── PartisipantSelection.scene
@@ -34,6 +55,7 @@ Assets/
     └── Program/
         └── ComPlayerBase.cs    
 ```
+
 ### タイトル画面（Assets/Scenes/Title.scene）
 
 タイトル画面です。<br>
@@ -75,13 +97,21 @@ AIデータは、挑戦者ごとにフォルダ単位で分けます。各フォ
 　② ①をアタッチしたPrefab<br>
 　③ アイコン画像（最大サイズ216*216）<br>
 
-② ①をアタッチしたPrefab には、挑戦者ごとに任意の組織名、プレイヤー名、③ アイコン画像 を設定します。
+② ①をアタッチしたPrefab には、挑戦者ごとに任意の所属名、プレイヤー名、③ アイコン画像 を設定します。
+
+あらかじめ、いくつかのサンプルAIが用意されています。
 
 ### 挑戦者リスト（Assets/GameAssets/ParticipantList.asset）
 
-挑戦者のAIをリスト管理するScriptableObjectです。<br>
-このリストに、① を登録すると、ゲーム内でその挑戦者のAIを選択できるようになります。
-  
+挑戦者選択画面で選択できるAIをリスト管理するScriptableObjectです。<br>
+このリストに、① のPrefabをアタッチします。
+
+### サンプルアイコン画像（Assets/GameAssets/Textures/ 以下）
+
+PlayerSampleImage_***.png は、挑戦者のAIのアイコン画像として使用可能です。<br>
+アイコン画像を用意できない場合はお使いください。<br>
+一部のサンプルAIは、このサンプルAIアイコン画像を使用しています。
+
 ---
 
 ## AI作成手順
@@ -94,13 +124,16 @@ AIデータは、挑戦者ごとにフォルダ単位で分けます。各フォ
 
 #### 2. 各項目を入力
 
-必須項目として、「参加番号」の欄に**connpass申し込み時に発行された参加番号**を入力してください。<br>
+必須項目として、「参加番号」の欄に **connpass申し込み時に発行された参加番号** を入力してください。<br>
 
 任意項目として、「所属名」「挑戦者名」をそれぞれ入力します。<br>
 所属名は、実際に所属している会社名や学校名を記入しても、架空の所属名を記入しても構いません。<br>
+挑戦者名は、本名でも亀井でも構いません。
+
 また、アイコン画像ファイル（jpgかpng）を「参照」ボタンから選択します（未選択可）。<br>
 最大サイズは256*256です。版権画像は使用しても構いませんが、公序良俗に反する画像はご遠慮ください。<br>
-これらの項目は、後からでも変更可能です。
+
+これらの任意項目は、後からでも変更可能です。
 
 [画像]
 
@@ -122,7 +155,8 @@ Assets/
 ```
 
 挑戦者作成ウィンドウでアイコン画像ファイルを設定しなかった場合、後から手動で追加してください。<br>
-Prefabで、所属名（Your Organization）、挑戦者名（Your Name）、アイコン画像ファイル（Face Image）を変更可能です。
+Prefabで、所属名（Your Organization）、挑戦者名（Your Name）、アイコン画像ファイル（Face Image）を変更可能です。<br>
+アイコン画像を用意できない場合、サンプルアイコン画像（Assets/GameAssets/Textures/ 以下の PlayerSampleImage_***.png）を使用しても構いません。
 
 #### 4. AIを作成する
 
@@ -211,7 +245,7 @@ public virtual void UDON_ReportOnShipping(IList<FoodType> foodsList, int tableId
 - [SXG_GetPlayerGroundType](#func18)
 - [SXG_GetRemainingGameTime](#func19)
 - [SXG_GetCollidedPlayersNumber](#func20)
-- 
+
 ---
 
 <h3 id="func01">SXG_GetFoodsInfoOnStage</h3>
@@ -376,6 +410,22 @@ List<int> SXG_GetCollidedPlayersNumber();
 今現在接触しているプレイヤー番号のリストを返します。<br>
 接触してるプレイヤーがいない場合、要素数0のリストを返します。<br>
 この番号は `SXG_GetPlayersInfo` で得られる配列の添え字と一致します。0（自分自身）は返しません。
+
+---
+
+## サンプルAI解説
+
+### Sample
+
+
+### Sample01
+
+
+### Sample02
+
+
+### Sample03
+
 
 ---
 

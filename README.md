@@ -56,7 +56,7 @@ AIは必ず4人選ぶ必要があります（重複可）。4人選ぶと「決�
 ゲーム画面から起動した場合は、参加者リスト（Assets/GameAssets/ParticipantList.asset）の上から4つ分の要素が選択されます。
 
 Spaceキーを押すと表示が消え、プレイ画面が見えるようになります。<br>
-Spaceキーを押すと試合が開始します。。<br>
+Spaceキーを押すと試合が開始します。<br>
 試合が終了すると「GAME SET」と表示されます。<br>
 Spaceキーを押すと、リザルトが表示されます。<br>
 Spaceキーを押すと、タイトル画面へ遷移します（リザルト演出中も押下可能）。
@@ -166,8 +166,12 @@ namespace Player000
 
 ## 使用できる関数
 
-- [SXG_GetFoodsInfoOnStage](#override01)
-- [SXG_GetFoodInfo](#override02)
+### override関数
+
+- [UDON_ShouldGetTheFoodOnStage](#override01)
+- [UDON_ReportOnShipping](#override02)
+
+### protected関数
 
 - [SXG_GetFoodsInfoOnStage](#func01)
 - [SXG_GetFoodInfo](#func02)

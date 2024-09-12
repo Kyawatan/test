@@ -55,7 +55,7 @@ Assets/
 タイトル画面です。<br>
 Spaceキーを押すと、挑戦者選択画面へ遷移します。
 
-[画像]
+<img src="https://github.com/user-attachments/assets/14b41e5b-19b7-4f37-87c2-e47676f22c34" width="50%">
 
 ### 挑戦者選択画面（Assets/Scenes/ParticipantSelection.scene）
 
@@ -63,7 +63,7 @@ Spaceキーを押すと、挑戦者選択画面へ遷移します。
 AIは必ず4人選ぶ必要があります（重複可）。4人選ぶと「決定」ボタンを押せるようになります。<br>
 「決定」ボタンを押すと、ゲーム画面へ遷移します。
 
-[画像]
+<img src="https://github.com/user-attachments/assets/07bb452b-407b-4946-85eb-e246c7b266e1" width="50%">
 
 ### ゲーム画面（Assets/Scenes/Game.scene）
 
@@ -71,14 +71,23 @@ AIは必ず4人選ぶ必要があります（重複可）。4人選ぶと「決�
 挑戦者選択画面から遷移してきた場合は、選択した挑戦者が表示されます。<br>
 ゲーム画面から起動した場合は、挑戦者リスト（Assets/GameAssets/ParticipantList.asset）の上から4つ分の要素が選択されます。
 
-Spaceキーを押すと以下の動作が順番に行われます<br>
-　①挑戦者の表示が消え、プレイ画面が表示<br>
-　②試合開始<br>
-　 ~ 試合終了まで待つ。「GAME SET」が表示されたら試合終了 ~ <br>
-　③リザルト表示<br>
-　④タイトル画面へ遷移（リザルト演出中でも遷移可能）<br>
+<img src="https://github.com/user-attachments/assets/00340903-ce1b-4bff-8b6e-d040a5d28f27" width="50%"><br>
 
-[画像]
+Spaceキーを押すと、挑戦者の表示が消え、プレイ画面が表示されます。
+
+<img src="https://github.com/user-attachments/assets/3ba2ce0e-2998-477e-ba6c-0a08b1db7b89" width="50%"><br>
+
+Spaceキーを押すと、試合開始します。<br>
+試合時間は1分30秒です。試合終了まで待ちます。
+
+試合終了すると「GAME SET」が表示されます。<br>
+
+<img src="https://github.com/user-attachments/assets/de45d66a-6266-4b19-be09-129f0af3f14c" width="50%"><br>
+
+Spaceキーを押すと、リザルト演出に移ります。<br>
+再度Spaceキーを押すと、タイトル画面へ遷移します（リザルト演出中でも遷移可能）。
+
+<img src="https://github.com/user-attachments/assets/6adf6dd7-91a7-4053-a478-71359ca0259b" width="50%">
 
 ### AI作成時に継承するベースクラス（Assets/UdonChef/ComPlayerBase.cs）
 
@@ -236,7 +245,7 @@ bool UDON_ShouldGetTheFoodOnStage(FoodNowInfo foodInfo);
 
 <h3 id="override02">UDON_ReportOnShipping</h3>
 
-public virtual void UDON_ReportOnShipping(IList<FoodType> foodsList, int tableId, int price, string menuName);
+public virtual void UDON_ReportOnShipping(IList\<FoodType\> foodsList, int tableId, int price, string menuName);
 
 自身の出荷テーブルに出荷されたときに呼び出されます。他のプレイヤーが自分の出荷テーブルに出荷した時も呼び出されます。
 
@@ -269,7 +278,7 @@ public virtual void UDON_ReportOnShipping(IList<FoodType> foodsList, int tableId
 
 <h3 id="func01">SXG_GetFoodsInfoOnStage</h3>
 
-List<FoodNowInfo> SXG_GetFoodsInfoOnStage(FoodState[] targetFoodsState=null);
+List\<FoodNowInfo\> SXG_GetFoodsInfoOnStage(FoodState[] targetFoodsState=null);
 
 ステージ上の食材の情報を取得します。
 

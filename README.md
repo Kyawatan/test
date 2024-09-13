@@ -543,18 +543,18 @@ Sample02の行動をベースに、キックもします。
 
 プレイヤーが拾う食材は、`FoodType`というenumで管理されています。
 
-| 食材       | FoodType    ||
-| ---------- | ------------- || 
-| うどん玉   | Noodle         || 
-| 海老天     | ShrimpTempura  ||
-| ちくわ天   | ChikuwaTempura ||
-| きつね     | Kitsune        ||
-| 大根おろし | GratedDaikon   ||
-| 卵         | Egg            || 
-| 肉         | Meat           ||
-| バター     | Butter         ||
-| レモン     | Lemon          ||
-| カレー     | Curry          ||
+| 食材       | FoodType    | |
+| ---------- | ------------- | --- | 
+| うどん玉   | Noodle         | ![食材_うどん玉](https://github.com/user-attachments/assets/7c00b4e9-9a62-4b1f-84e7-c5b66e0872d7) | 
+| 海老天     | ShrimpTempura  | ![食材_海老天](https://github.com/user-attachments/assets/a561dfb0-9f66-4c25-aa2a-5afb6fe8ac03) |
+| ちくわ天   | ChikuwaTempura | ![食材_ちく天](https://github.com/user-attachments/assets/ee58b7a6-f826-41bf-bb21-4a14fc4ce709) |
+| きつね     | Kitsune        | ![食材_きつね](https://github.com/user-attachments/assets/4ba7428b-47a1-4ce2-a1ef-a6357f48368b) |
+| 大根おろし | GratedDaikon   | ![食材_大根](https://github.com/user-attachments/assets/4694fda8-cad9-4f21-a463-6fc4aca5ff21) |
+| 卵         | Egg            | ![食材_卵](https://github.com/user-attachments/assets/a1301555-8d6e-4450-a253-4194e06339f7) | 
+| 肉         | Meat           | ![食材_肉](https://github.com/user-attachments/assets/07c9dfa6-57cc-4766-886e-fcc10a251e05) |
+| バター     | Butter         | ![食材_バター](https://github.com/user-attachments/assets/395ee572-58fd-46ca-b2d0-372b9ab473c5) |
+| レモン     | Lemon          | ![食材_レモン](https://github.com/user-attachments/assets/bcc252cf-f29c-4d19-bdf0-1fc11b5657a7) |
+| カレー     | Curry          | ![食材_カレー](https://github.com/user-attachments/assets/05d7a9a5-4dcd-4d7a-8070-853a59f54bb7) |
 
 ---
 

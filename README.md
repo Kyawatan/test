@@ -1,5 +1,7 @@
 # SXGプログラミングバトル2024　めざせ最強うどん職人！！
 
+![うどん](https://github.com/user-attachments/assets/af7de2d6-c1da-49ec-9bcc-be79b52fc3c8)
+
 ## 概要
 
 『Sanuki X Game 2024』イベントの一般参加企画です。<br>
@@ -31,6 +33,8 @@
 - 会場開催/インターネット配信の想定<br>
 ・16人まででトーナメント<br>
 - 参加者が多い場合は事前に予選を行い、本番では決勝のみ配信
+
+![キャプチャ](https://github.com/user-attachments/assets/87cb7591-9fd4-4f4a-9b7b-0d8d8f096d66)
 
 ---
 

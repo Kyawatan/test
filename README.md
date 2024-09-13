@@ -571,7 +571,7 @@ Sample02の行動をベースに、キックもします。
 | きつねうどん     | 320  | うどん玉<br>きつね                        | きつね     | バター         | ![メニュー_きつねうどん](https://github.com/user-attachments/assets/76a85321-4e88-4453-8399-6758b57ed83e) |
 | 特上天ぷらうどん | 780  | うどん玉<br>海老天<br>ちくわ天             |            | バター         | |
 | 釜玉うどん       | 300  | うどん玉<br>卵                           |            | バター         | |
-| 釜バターうどん   | 520  | うどん玉<br>卵<br>バター                  |            |                | ![メニュー_釜バターうどん](https://github.com/user-attachments/assets/5782942e-ff69-4136-8d34-3099ff952f40) |
+| 釜バターうどん   | 520  | うどん玉<br>卵<br>バター                  |            |                | ![メニュー_釜バターうどん](https://github.com/user-attachments/assets/d1543ea0-b336-4052-9fbe-885c1a03f32d) |
 | 肉うどん         | 450  | うどん玉<br>肉                           | 肉         | バター         | ![メニュー_肉うどん](https://github.com/user-attachments/assets/89eb34de-2a69-4359-a739-ce8979eedf07) |
 | 肉ぶっかけ       | 500  | うどん玉<br>肉<br>レモン                  | 肉         | バター         | |
 | 肉釜玉うどん     | 550  | うどん玉<br>肉<br>卵                      | 肉         | バター         | |

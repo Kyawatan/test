@@ -477,11 +477,11 @@ List<int> SXG_GetCollidedPlayersNumber();
 AI作成時に扱う座標は全てローカル座標になります。<br>
 ステージ中央を原点とし、どのプレイヤーから見ても必ず自身の出荷テーブルが後ろ側（Z座標がマイナス）に位置します。<br>
 
-<img src="![ステージ座標](https://github.com/user-attachments/assets/b3e4d9d1-d247-4c91-917b-dd1888f762c4)" width="50%"><br>
+<img src="https://github.com/user-attachments/assets/b3e4d9d1-d247-4c91-917b-dd1888f762c4" width="50%"><br>
 
 ステージ幅と出荷テーブル幅も、AI作成時に参考にしてください。
 
-<img src="![ステージ長さ](https://github.com/user-attachments/assets/c04f1c8e-86f2-45d1-8aad-6ee37789c858)" width="50%">
+<img src="https://github.com/user-attachments/assets/c04f1c8e-86f2-45d1-8aad-6ee37789c858" width="50%">
 
 ---
 

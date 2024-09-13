@@ -162,9 +162,10 @@ PlayerSampleImage_***.png は、挑戦者のAIのアイコン画像として使�
 ■任意項目
 - 所属名：実際に所属している会社名や学校名 or 架空の所属名<br>
 - 挑戦者名：本名 or ニックネーム
+- アイコン画像ファイル選択：アイコン画像ファイル（jpgかpng）を「参照」ボタンから選択（未選択可能）
 
-また、アイコン画像ファイル（jpgかpng）を「参照」ボタンから選択します。（未選択可能）<br>
-最大サイズは256*256です。<br>版権画像は使用できますが、公序良俗に反する画像はご遠慮ください。<br>
+※アイコン画像ファイルの最大サイズは256*256です。<br>
+版権画像は使用できますが、公序良俗に反する画像はご遠慮ください。<br>
 
 これらの任意項目は、挑戦者登録ウィンドウを閉じたあとでも変更可能です。
 
@@ -181,7 +182,7 @@ Assets/
 └── Participant/
     └── Player041/
         ├── Player041.cs
-        └── Player041.prefab
+        ├── Player041.prefab
         └── Player041.png
 ```
 
@@ -479,8 +480,6 @@ List<int> SXG_GetCollidedPlayersNumber();
 ある程度食材を拾うと自身の出荷テーブルへ運びます。<br>
 いくらか経っても狙いの食材を拾えない場合、諦めて別の食材を狙います。
 
----
-
 ### Sample01（Assets/Participant/Sample01 以下）
 
 ■所属名：FM728<br>
@@ -491,8 +490,6 @@ List<int> SXG_GetCollidedPlayersNumber();
 ステージ上の食材をランダムに狙います。<br>
 メニューが成立するか、手持ちの食材がいっぱいになると自身の出荷テーブルへ運びます。<br>
 いくらか経っても狙いの食材を拾えない場合、諦めて別の食材を狙います。
-
----
 
 ### Sample02（Assets/Participant/Sample02 以下）
 
@@ -505,8 +502,6 @@ List<int> SXG_GetCollidedPlayersNumber();
 メニューが成立するか、手持ちの食材がいっぱいになると自身の出荷テーブルへ運びます。<br>
 いくらか経っても狙いの食材を拾えない場合、諦めて別の食材を狙います。
 
----
-
 ### Sample03（Assets/Participant/Sample03 以下）
 
 ■所属名：FM728<br>
@@ -515,8 +510,6 @@ List<int> SXG_GetCollidedPlayersNumber();
 
 Sample02の行動をベースに、キックもします。
 
----
-
 ### Sample04（Assets/Participant/Sample04 以下）
 
 ■所属名：<br>
@@ -524,8 +517,6 @@ Sample02の行動をベースに、キックもします。
 ■特徴：
 
 [追記予定]
-
----
 
 ### Sample05（Assets/Participant/Sample05 以下）
 

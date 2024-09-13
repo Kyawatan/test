@@ -151,12 +151,12 @@ PlayerSampleImage_***.png は、挑戦者のAIのアイコン画像として使�
 
 挑戦者登録ウィンドウが開きます。
 
-<img src="https://github.com/user-attachments/assets/71da46e6-1ebc-4287-828a-8d5033da1772" width="50%"><br>
+<img src="https://github.com/user-attachments/assets/93d3bbfe-c8db-4b2b-b408-10b9d1eda08f" width="50%"><br>
 
 #### 2. 各項目を入力
 
 ■必須項目
-- 受付番号： **connpassエントリー時に発行された受付番号** を入力
+- 受付番号： **connpassエントリー時に発行された受付番号** を入力<br>
 [作成する前に](#entrypoint) を確認
 
 ■任意項目

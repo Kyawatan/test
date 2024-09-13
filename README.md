@@ -138,7 +138,7 @@ PlayerSampleImage_***.png は、挑戦者のAIのアイコン画像として使�
 
 <h3 id="entrypoint">作成する前に</h3>
 
-**connpassでエントリーし、「参加番号」を発行してください。**<br>
+**connpassでエントリーし、「受付番号」を発行してください。**<br>
 エントリーせずにAIを提出した場合、無効となります。<br>
 
 <img src="https://github.com/user-attachments/assets/6401effb-1418-4d37-a39f-0694ded64158" width="50%">
@@ -156,7 +156,7 @@ PlayerSampleImage_***.png は、挑戦者のAIのアイコン画像として使�
 #### 2. 各項目を入力
 
 ■必須項目
-- 参加番号： **connpassエントリー時に発行された参加番号** を入力
+- 受付番号： **connpassエントリー時に発行された受付番号** を入力
 [作成する前に](#entrypoint) を確認
 
 ■任意項目
@@ -171,10 +171,10 @@ PlayerSampleImage_***.png は、挑戦者のAIのアイコン画像として使�
 #### 3. 「作成」ボタン押下
 
 各項目を入力し終えて「作成」ボタンを押すと、挑戦者のAIに必要なデータが作成されます。<br>
-フォルダ名、各ファイル名は「Player(3桁の参加番号）」で命名されます。<br>
+フォルダ名、各ファイル名は「Player(3桁の受付番号）」で命名されます。<br>
 同時に、挑戦者リスト（Assets/GameAssets/ParticipantList.asset）の0番目の要素に登録され、ゲーム内で挑戦者として選択できるようになります。
 
-例：参加番号 41
+例：受付番号 41
 
 ```
 Assets/
@@ -224,7 +224,7 @@ namespace Player000
 ### 提出方法
 
 ・AIデータが入っているフォルダをZIP形式に圧縮する<br>
-　例：参加番号 41
+　例：受付番号 41
 ```
 Assets/
 └── Participant/
@@ -232,12 +232,12 @@ Assets/
 ```
 
 ・GoogleフォームにZIPを提出<br>
-　**connpassエントリー時に発行された参加番号**が必要です
+　**connpassエントリー時に発行された受付番号**が必要です
 
 ### 注意事項
 
-- 必ずconnpassでエントリーし、参加番号を発行してください
-- 参加番号を間違えないよう注意してください
+- 必ずconnpassでエントリーし、受付番号を発行してください
+- 受付番号を間違えないよう注意してください
 - アイコン画像サイズは最大256*256とし、公序良俗に反する画像はご遠慮ください
 - AI作成時にUnityパッケージの追加はできません
 - AI提出後、弊社で不正や目立った不具合が無いか審査いたします
@@ -479,6 +479,8 @@ List<int> SXG_GetCollidedPlayersNumber();
 ある程度食材を拾うと自身の出荷テーブルへ運びます。<br>
 いくらか経っても狙いの食材を拾えない場合、諦めて別の食材を狙います。
 
+---
+
 ### Sample01（Assets/Participant/Sample01 以下）
 
 ■所属名：FM728<br>
@@ -490,7 +492,9 @@ List<int> SXG_GetCollidedPlayersNumber();
 メニューが成立するか、手持ちの食材がいっぱいになると自身の出荷テーブルへ運びます。<br>
 いくらか経っても狙いの食材を拾えない場合、諦めて別の食材を狙います。
 
-### Sample02
+---
+
+### Sample02（Assets/Participant/Sample02 以下）
 
 ■所属名：FM728<br>
 ■挑戦者名：ルッカ<br>
@@ -501,7 +505,9 @@ List<int> SXG_GetCollidedPlayersNumber();
 メニューが成立するか、手持ちの食材がいっぱいになると自身の出荷テーブルへ運びます。<br>
 いくらか経っても狙いの食材を拾えない場合、諦めて別の食材を狙います。
 
-### Sample03
+---
+
+### Sample03（Assets/Participant/Sample03 以下）
 
 ■所属名：FM728<br>
 ■挑戦者名：蹴ルッカ<br>
@@ -509,7 +515,9 @@ List<int> SXG_GetCollidedPlayersNumber();
 
 Sample02の行動をベースに、キックもします。
 
-### Sample04
+---
+
+### Sample04（Assets/Participant/Sample04 以下）
 
 ■所属名：<br>
 ■挑戦者名：<br>
@@ -517,7 +525,9 @@ Sample02の行動をベースに、キックもします。
 
 [追記予定]
 
-### Sample05
+---
+
+### Sample05（Assets/Participant/Sample05 以下）
 
 ■所属名：xeen<br>
 ■挑戦者名：ぼく<br>

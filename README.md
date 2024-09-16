@@ -72,7 +72,7 @@ Assets/
 │   │   └── ComPlayerSample04.prefab
 │   └── Sample05/
 │       ├── ComPlayerSample05.cs
-│   │   ├── ComPlayerSample05.png
+│       ├── ComPlayerSample05.png
 │       └── ComPlayerSample05.prefab
 ├── Scenes/
 │   ├── Game.scene

@@ -540,11 +540,12 @@ Sample02の行動をベースに、他のプレイヤーに触れたらキック
 
 ### Sample04（Assets/Participant/Sample04 以下）
 
-■所属名：<br>
-■挑戦者名：<br>
-■特徴：
+■所属名：XEEN<br>
+■挑戦者名：ぴよまる<br>
+■特徴：オールラウンダーなやつ
 
-[追記予定]
+出荷価格が高くなる食材を狙い、目の前に他プレイヤーがいたら蹴ります。<br>
+他プレイヤーの出荷テーブルに近寄らないよう安全圏内を走り、ステージ外（出荷テーブルの外側）に出てしまった場合はステージから落ちます。
 
 ### Sample05（Assets/Participant/Sample05 以下）
 
@@ -588,15 +589,15 @@ Sample02の行動をベースに、他のプレイヤーに触れたらキック
 | 海老天うどん     | 400  | うどん玉<br>海老天                        | 海老天      | バター         | ![メニュー_海老天うどん](https://github.com/user-attachments/assets/1dd96691-d4f2-467f-8c30-b5fbf1821ca7) |
 | ちく天ぶっかけ   | 550  | うどん玉<br>ちくわ天                      | ちくわ天    | バター         | ![メニュー_ちく天ぶっかけ](https://github.com/user-attachments/assets/17a7a671-a950-47f0-b139-3dbf24c893c4) |
 | きつねうどん     | 320  | うどん玉<br>きつね                        | きつね     | バター         | ![メニュー_きつねうどん](https://github.com/user-attachments/assets/76a85321-4e88-4453-8399-6758b57ed83e) |
-| 特上天ぷらうどん | 780  | うどん玉<br>海老天<br>ちくわ天             |            | バター         | |
-| 釜玉うどん       | 300  | うどん玉<br>卵                           |            | バター         | |
+| 特上天ぷらうどん | 780  | うどん玉<br>海老天<br>ちくわ天             |            | バター         | ![メニュー_特上天ぷらうどん](https://github.com/user-attachments/assets/99538fbc-ea8a-419b-8085-762fd7cad244) |
+| 釜玉うどん       | 300  | うどん玉<br>卵                           |            | バター         | ![メニュー_釜玉うどん](https://github.com/user-attachments/assets/e5e98512-71c9-4a12-9111-22bbfdf779c5) |
 | 釜バターうどん   | 520  | うどん玉<br>卵<br>バター                  |            |                | ![メニュー_釜バターうどん](https://github.com/user-attachments/assets/d1543ea0-b336-4052-9fbe-885c1a03f32d) |
 | 肉うどん         | 450  | うどん玉<br>肉                           | 肉         | バター         | ![メニュー_肉うどん](https://github.com/user-attachments/assets/89eb34de-2a69-4359-a739-ce8979eedf07) |
-| 肉ぶっかけ       | 500  | うどん玉<br>肉<br>レモン                  | 肉         | バター         | |
-| 肉釜玉うどん     | 550  | うどん玉<br>肉<br>卵                      | 肉         | バター         | |
+| 肉ぶっかけ       | 500  | うどん玉<br>肉<br>レモン                  | 肉         | バター         | ![メニュー_肉ぶっかけ](https://github.com/user-attachments/assets/63fbaf04-6d79-4cf1-98c0-c3a4d2f54a3b) |
+| 肉釜玉うどん     | 550  | うどん玉<br>肉<br>卵                      | 肉         | バター         | ![メニュー_肉釜玉](https://github.com/user-attachments/assets/5c78b862-7bef-40ef-8e02-9ef7b5a83552) |
 | カレーうどん     | 400  | うどん玉<br>カレー                        |            | バター<br>大根 | ![メニュー_カレーうどん](https://github.com/user-attachments/assets/759b32a4-8e70-4b4b-b014-2c1a6a543076) |
-| 肉カレーうどん   | 970  | うどん玉<br>肉<br>カレー                  | 肉         | バター<br>大根 | |
-| エックスうどん   |  2700 | うどん玉<br>海老天 ×2<br>肉<br>レモン     |            | バター         | |
+| 肉カレーうどん   | 970  | うどん玉<br>肉<br>カレー                  | 肉         | バター<br>大根 | ![メニュー_肉カレーうどん](https://github.com/user-attachments/assets/792a5a6c-c63a-40ec-a7eb-032e56ea5ab3) |
+| エックスうどん   |  2700 | うどん玉<br>海老天 ×2<br>肉<br>レモン     |            | バター         | ![メニュー_エックスうどん](https://github.com/user-attachments/assets/a6a4e21e-6e38-4028-9932-16fd3d0b0ba2) |
 
 ※ゲーム内では拾った食材を積み上げているため、メニュー画像はイメージです。
 

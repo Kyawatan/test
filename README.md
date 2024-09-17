@@ -1,5 +1,7 @@
 # SXGプログラミングバトル2024　めざせ最強うどん職人！！
 
+![画面_タイトル](https://github.com/user-attachments/assets/2581da80-0fa1-4c2a-b707-048a0b369406)
+
 ## 概要
 
 [『Sanuki X Game 2024』](https://www.showxguys.org/)イベントの一般参加企画です。<br>
@@ -90,7 +92,7 @@ Assets/
 タイトル画面です。<br>
 Spaceキーを押すと、挑戦者選択画面へ遷移します。
 
-<img src="https://github.com/user-attachments/assets/14b41e5b-19b7-4f37-87c2-e47676f22c34" width="50%">
+<img src="https://github.com/user-attachments/assets/2581da80-0fa1-4c2a-b707-048a0b369406" width="50%">
 
 ### 挑戦者選択画面（Assets/Scenes/ParticipantSelection.scene）
 
@@ -98,7 +100,7 @@ Spaceキーを押すと、挑戦者選択画面へ遷移します。
 AIは必ず4人選ぶ必要があります（重複可）。4人選ぶと「決定」ボタンを押せるようになります。<br>
 「決定」ボタンを押すと、ゲーム画面へ遷移します。
 
-<img src="https://github.com/user-attachments/assets/07bb452b-407b-4946-85eb-e246c7b266e1" width="50%">
+<img src="https://github.com/user-attachments/assets/1b12f8c8-4996-4ee0-8fef-4460d8bab753" width="50%">
 
 ### ゲーム画面（Assets/Scenes/Game.scene）
 
